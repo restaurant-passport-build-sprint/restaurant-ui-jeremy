@@ -146,7 +146,7 @@ h5 {
   color: #39491C;
 }
 h1 {
-  font-size: 4rem;
+  font-size: 8rem;
 }
 h2 {
   font-size: 3.5rem;
@@ -170,7 +170,11 @@ header {
   justify-content: flex-end;
   padding: 0 10px;
 }
-header nav {
+header .navBox {
+  display: flex;
+  justify-content: flex-end;
+}
+header .navBox nav {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -178,13 +182,13 @@ header nav {
   width: 40%;
   margin: 0 7px;
 }
-header a {
+header .navBox a {
   margin: 0 10%;
   font-size: 1.8rem;
   text-decoration: none;
   color: #F3C65D;
 }
-header a:hover {
+header .navBox a:hover {
   background: #F5F5F5;
   color: #2b0f16;
   border-radius: 5px;
@@ -193,10 +197,14 @@ header a:hover {
 .home {
   width: 100%;
 }
-.home img {
-  background-size: cover;
-}
-.home .topBox {
-  border: 2px solid #F3C65D;
-  height: 70vh;
+.home .imgBox {
+  background-image: url("/images/dinnerTableO.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  height: 60vh;
+  width: 100%;
+  margin-top: 3%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

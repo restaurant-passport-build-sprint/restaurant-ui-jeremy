@@ -5,24 +5,31 @@ header {
     justify-content: flex-end;
     padding: 0 10px;
     
-    nav {
-        .center();
-        height: 3vh;
-        width: 40%;
-        margin: 0 7px;
-    }
-    a {
-        margin:0 10%;
-        font-size: 1.8rem;
-        text-decoration: none;
-        color: @yellow;
+    .navBox {
+        display: flex;
+        justify-content: flex-end;
 
-        &:hover {
-            background: @white;
-            color: @kalamata;
-            border-radius: 5px;
-            padding: 1%;
+        nav {
+            .center();
+            height: 3vh;
+            width: 40%;
+            margin: 0 7px;
         }
 
+        a {
+            margin:0 10%;
+            font-size: 1.8rem;
+            text-decoration: none;
+            color: @yellow;
+
+            &:hover {
+                background: @white;
+                color: @kalamata;
+                border-radius: 5px;
+                padding: 1%;
+            }
+
+        }
     }
+    
 }

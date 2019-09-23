@@ -1,11 +1,11 @@
-.center(){
-    display:flex;
-    justify-content: center;
-    align-items: center;
-}
-
 
 //Parametric mixin
+
+.center(@Hor , @Vert){
+    display:flex;
+    justify-content: @Hor;
+    align-items: @Vert
+}
 .direction(@direction){
     display:flex;
     flex-direction: @direction;
