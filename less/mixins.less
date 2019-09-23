@@ -1,0 +1,28 @@
+
+//Parametric mixin
+
+.center(@Hor , @Vert){
+    display:flex;
+    justify-content: @Hor;
+    align-items: @Vert
+}
+.direction(@direction){
+    display:flex;
+    flex-direction: @direction;
+}
+.spacing(@space){
+    display: flex;
+    justify-content: @space;
+}
+.customizeBtn (@background, @color){
+    background: @background;
+    color: @color;
+    width: 100%;
+    height: 4vh;
+    font-size: 1.7rem;
+    border-radius: 5px;
+}
+ 
+//Escaping for Media Queries
+@phone: ~'(max-width:500px)';
+@tablet: ~'(max-width:800px)';

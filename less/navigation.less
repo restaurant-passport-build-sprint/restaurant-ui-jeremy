@@ -1,0 +1,35 @@
+header {
+    height: 3vh;
+    background: @kalamata;
+    display: flex;
+    justify-content: flex-end;
+    padding: 0 10px;
+    
+    .navBox {
+        display: flex;
+        justify-content: flex-end;
+
+        nav {
+            .center();
+            height: 3vh;
+            width: 40%;
+            margin: 0 7px;
+        }
+
+        a {
+            margin:0 10%;
+            font-size: 1.8rem;
+            text-decoration: none;
+            color: @yellow;
+
+            &:hover {
+                background: @white;
+                color: @kalamata;
+                border-radius: 5px;
+                padding: 1%;
+            }
+
+        }
+    }
+    
+}
