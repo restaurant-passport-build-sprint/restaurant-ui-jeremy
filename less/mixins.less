@@ -3,17 +3,17 @@
     justify-content: center;
     align-items: center;
 }
-.spacing(){
-    display: flex;
-    justify-content: space-evenly;
-}
+
 
 //Parametric mixin
 .direction(@direction){
     display:flex;
     flex-direction: @direction;
 }
-
+.spacing(@space){
+    display: flex;
+    justify-content: @space;
+}
 .customizeBtn (@background, @color){
     background: @background;
     color: @color;
@@ -25,3 +25,4 @@
  
 //Escaping for Media Queries
 @phone: ~'(max-width:500px)';
+@tablet: ~'(max-width:800px)';

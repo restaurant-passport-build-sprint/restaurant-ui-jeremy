@@ -128,14 +128,14 @@ table {
 }
 * {
   box-sizing: border-box;
+  max-width: 100%;
 }
 html {
   font-size: 62.5%;
 }
-html,
 body {
   font-family: 'Libre Baskerville', serif;
-  color: #5E6164;
+  color: #2b0f16;
 }
 h1,
 h2,
@@ -143,13 +143,13 @@ h3,
 h4,
 h5 {
   font-family: 'Lato', sans-serif;
-  color: #23293B;
+  color: #39491C;
 }
 h1 {
   font-size: 4rem;
 }
 h2 {
-  font-size: 3.2rem;
+  font-size: 3.5rem;
 }
 h3 {
   font-size: 2.8rem;
@@ -159,7 +159,44 @@ p {
   line-height: 1.4;
 }
 .container {
-  max-width: 800px;
+  max-width: 1000px;
   width: 100%;
   margin: 0 auto;
+}
+header {
+  height: 3vh;
+  background: #2b0f16;
+  display: flex;
+  justify-content: flex-end;
+  padding: 0 10px;
+}
+header nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 3vh;
+  width: 40%;
+  margin: 0 7px;
+}
+header a {
+  margin: 0 10%;
+  font-size: 1.8rem;
+  text-decoration: none;
+  color: #F3C65D;
+}
+header a:hover {
+  background: #F5F5F5;
+  color: #2b0f16;
+  border-radius: 5px;
+  padding: 1%;
+}
+.home {
+  width: 100%;
+}
+.home img {
+  background-size: cover;
+}
+.home .topBox {
+  border: 2px solid #F3C65D;
+  height: 70vh;
 }
