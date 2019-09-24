@@ -293,7 +293,6 @@ header .navBox nav a:hover {
 .home .midPage {
   background: #ffe3ab;
   height: 100vh;
-  border: 1px solid grey;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -326,4 +325,7 @@ header .navBox nav a:hover {
 }
 .home .midPage .center .centrBoxes .inner {
   margin: 2%;
+}
+.home .bottomPage {
+  height: 100vh;
 }
