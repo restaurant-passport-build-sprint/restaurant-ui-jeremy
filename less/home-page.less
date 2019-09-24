@@ -36,23 +36,23 @@
     }
 
 
-    ul{
-        margin:0px;
-        padding:0px;
-    }
+    // ul{
+    //     margin:0px;
+    //     padding:0px;
+    // }
 
-    ul li{
-        list-style: none;
-    }
+    // ul li{
+    //     list-style: none;
+    // }
 
-    ul li a{
-        color:@kalamata;
-        display: block;
-        width: 180px;
-        padding: 10px;
-        text-decoration: none;
-        font-size: 3rem;
-    }
+    // ul li a{
+    //     color:@kalamata;
+    //     display: block;
+    //     width: 180px;
+    //     padding: 10px;
+    //     text-decoration: none;
+    //     font-size: 3rem;
+    // }
 
     #sidebar-btn{
         display:inline-block;
@@ -95,7 +95,7 @@
             height: 220vh;
         }
         @media @tablet {
-            height: 265vh;
+            height: 270vh;
         }
         @media @phone {
             height: 200vh;
@@ -115,7 +115,7 @@
 
             @media @tablet {
                 width: 95%;
-            }
+            }//closes the media query
 
         }//closes midTop
 
@@ -125,12 +125,7 @@
             align-items: center;
             flex-direction: column;
 
-            @media @desk {
-                // flex-direction: row;
-            }
-            // @media @tablet {
-            //     flex-direction: column;
-            // }
+            
             .centrBoxes {
                 width: 100%;
                 display: flex;
@@ -138,12 +133,13 @@
                 justify-content: space-between;
 
                 @media @desk {
-                    margin:3%;
-                }
+                    margin:5%;
+                }//closes the media query
                 @media @tablet {
+                    margin:2%;
                     flex-direction: column-reverse;
                     flex-wrap: wrap;
-                }
+                }//closes the media query
 
                 img {
                     width: 65%;
@@ -151,7 +147,12 @@
 
                     @media @tablet {
                     width: 90%;
-                    }
+                    margin: 2% 0;
+                    }//closes the media query
+
+                    @media @phone {
+                        margin:2% 0;
+                    }//closes the media query
                 }//closes img
                 
                 .inner {
@@ -160,7 +161,8 @@
 
                     @media @tablet {
                         width:90%;
-                    }
+                        margin:5% 0;
+                    }//closes the media query
                 }//closes the inner
 
                 .reverse {
@@ -168,8 +170,8 @@
                     @media @tablet {
                         flex-direction: column;
                         align-items: center;
-                    }
-                }
+                    }//closes the media query
+                }//closes the reverse
 
             }//closes centrBoxes
 
@@ -179,62 +181,73 @@
     }//closes the midPage
     
    .bottomPage {
-    background-image: url(/images/wine.jpg);
+    background-image: url(/images/mussels.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     height: 100vh;
        
+        .bottomTop {
+            .center();
+            height: 10vh;
+            background: black;
+
+            h2 {
+                color: white;
+            }//closes h2
+
+        }//closes bottomTop
 
         .bottomBox {
-            
-            
-            .bottomTop {
-                .center();
-                height: 10vh;
-                background: black;
-
-                h2 {
-                    color: white;
-                }//closes h2
-
-            }//closes bottomTop
+            width:90%;
+            display: flex;
+            justify-content:center;
+            align-items: center;
+            justify-content: space-evenly;
+            flex-direction: column;
 
             .bottomMid {
-                margin:5%;
+                margin:20%;
+                padding:2%;
+                width:40%;
+                height:20vh;
+                border-radius: 10px;
+                background: @white;
+                
+                @media @tablet {
+                    width: 60%;
+                }//closes media query 
 
+                a {
+                    text-decoration: none;
+                }//closes the anchor
+                h3, p {
+                    color: @greenOlive;
+                }//closes the h3,p
+                
                 .mid {
+                    width:50%;
                     
                     h4, p {
                     color: @white;
-                    }    
+                    }//closes the h4, p
+                }//closes the mid class
+            }//closes the bottomMid class
 
+            a {
+                button {
+                    // width: 30%;
+                    height: 5vh;
+                    background: @pimentoRed;
+                    color: @lightYellow;
+                    font-size: 3.5rem;
+                    border-radius: 10px;
 
-                    
-                    
-
-
-                }
-            }
-
-
-
-
-        }
-
-
-
-
-
-
+                    &:hover {
+                        background: @lightYellow;
+                        color:@pimentoRed; 
+                    }//closes the hover
+                }//closes the button
+            }//closes the anchor
+        }//closes the bottomBox
     }//closes the bottomPage
-
-   
-    
-    
-
-
-
-
-
-
-}
+}//closes the home

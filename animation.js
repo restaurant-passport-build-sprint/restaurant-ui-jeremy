@@ -18,7 +18,7 @@ var tabPanels; */}
 
 window.onload=function() {
     // when the page loads, grab the li elements
-    tabLinks = document.getElementById("tabs").getElementsByTagName("li");
+    tabLinks = document.getElementById("tabs");
 	// Now get all the tab panel container divs
 	tabPanels = document.getElementById("containers").getElementsByTagName("div");
 	
