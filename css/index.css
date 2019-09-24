@@ -133,15 +133,15 @@ table {
 html {
   font-size: 62.5%;
 }
-body {
+body,
+h4,
+h5 {
   font-family: 'Libre Baskerville', serif;
   color: #2b0f16;
 }
 h1,
 h2,
-h3,
-h4,
-h5 {
+h3 {
   font-family: 'Lato', sans-serif;
   color: #2b0f16;
 }
@@ -290,13 +290,40 @@ header .navBox nav a:hover {
     background: #F5F5F5;
   }
 }
-.home .midBox {
-  background: #F3C65D;
+.home .midPage {
+  background: #ffe3ab;
   height: 100vh;
+  border: 1px solid grey;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
-.home .midBox .centr {
+.home .midPage .midTop {
   background: #F5F5F5;
   color: #2b0f16;
   width: 50%;
-  margin: 3%;
+  margin: 1%;
+  padding: 2%;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.home .midPage .center {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.home .midPage .center .centrBoxes {
+  width: 90%;
+  display: flex;
+}
+.home .midPage .center .centrBoxes img {
+  width: 60%;
+  margin: 1.5%;
+}
+.home .midPage .center .centrBoxes .inner {
+  margin: 2%;
 }
