@@ -163,48 +163,61 @@ p {
   width: 100%;
   margin: 0 auto;
 }
-header {
-  height: 3vh;
-  background: #2b0f16;
-  display: flex;
-  justify-content: flex-end;
-  padding: 0 10px;
-}
-header .navBox {
-  display: flex;
-  justify-content: flex-end;
-}
-header .navBox nav {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 3vh;
-  width: 40%;
-  margin: 0 7px;
-}
-header .navBox a {
-  margin: 0 10%;
-  font-size: 1.8rem;
-  text-decoration: none;
-  color: #F3C65D;
-}
-header .navBox a:hover {
-  background: #F5F5F5;
-  color: #2b0f16;
-  border-radius: 5px;
-  padding: 1%;
-}
 .home {
   width: 100%;
+  /*Sidebar button
+--------------------------------------------*/
 }
-.home .imgBox {
-  background-image: url("/images/dinnerTableO.png");
-  background-size: 100%;
+.home .topBox {
+  background-image: url(/images/dinnerTableO.png);
+  background-size: cover;
   background-repeat: no-repeat;
-  height: 60vh;
-  width: 100%;
-  margin-top: 3%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  height: 100vh;
+}
+.home #sidebar {
+  background: #2b0f16;
+  width: 180px;
+  height: 100%
+        display: block;
+  position: absolute;
+  right: -180px;
+  top: 0px;
+  transition: left 0.3s linear;
+  font-family: Lato ', sans-serif;', cursive;
+  font-size: 25;
+}
+.home #sidebar.visible {
+  right: 0;
+  transition: left 0.3s linear;
+}
+.home ul {
+  margin: 0px;
+  padding: 0px;
+}
+.home ul li {
+  list-style: none;
+}
+.home ul li a {
+  color: #001B76;
+  display: block;
+  width: 180px;
+  padding: 10px;
+  text-decoration: none;
+}
+.home #sidebar-btn {
+  display: inline-block;
+  vertical-align: middle;
+  width: 30px;
+  height: 15px;
+  cursor: pointer;
+  margin: 20px;
+  position: absolute;
+  top: 0px;
+  left: -60px;
+}
+.home #sidebar-btn span {
+  height: 3px;
+  background: #2b0f16;
+  margin-bottom: 5px;
+  display: block;
 }
