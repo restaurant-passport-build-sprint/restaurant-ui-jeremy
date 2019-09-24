@@ -2,14 +2,14 @@
     width: 100%;
 
     .topBox {
-       background-image: url(/images/dinnerTableO.png);
+       background-image: url(/images/dinnerTableW.png);
        background-size: cover;
        background-repeat: no-repeat;
        height: 100vh;
 
        img {
-           width: 40%;
-        //    margin: 20%;
+           width: 50%;
+           margin: 5% 0 0 12%;
        }
     }
 
@@ -20,7 +20,7 @@
         width: 40%;
         margin-top: 5%;
         padding: 1%;
-        height:100%;
+        height:80%;
         display: block;
         position: absolute;
         right: -40%;
@@ -36,23 +36,23 @@
     }
 
 
-    ul{
-        margin:0px;
-        padding:0px;
-    }
+    // ul{
+    //     margin:0px;
+    //     padding:0px;
+    // }
 
-    ul li{
-        list-style: none;
-    }
+    // ul li{
+    //     list-style: none;
+    // }
 
-    ul li a{
-        color:@kalamata;
-        display: block;
-        width: 180px;
-        padding: 10px;
-        text-decoration: none;
-        font-size: 3rem;
-    }
+    // ul li a{
+    //     color:@kalamata;
+    //     display: block;
+    //     width: 180px;
+    //     padding: 10px;
+    //     text-decoration: none;
+    //     font-size: 3rem;
+    // }
 
     #sidebar-btn{
         display:inline-block;
@@ -76,26 +76,46 @@
             background: @white;
         }
     }
-       
+
+
+    // Middle Page--------------------------------
+
+
     .midPage {
         background: @lightYellow;
-        height: 100vh;
+        height: 230vh;
         // border: 1px solid grey;
         display:flex;
         align-items: center;
+        // justify-content: space-evenly;
         flex-direction: column;
+        
 
+        @media @desk {
+            height: 220vh;
+        }
+        @media @tablet {
+            height: 270vh;
+        }
+        @media @phone {
+            height: 200vh;
+        }
+        
         .midTop {
             background: @white;
             color: @kalamata;
             width: 50%;
             margin: 1%;
-            padding: 2%;
+            padding: .5%;
             border-radius: 15px;
             display: flex;
             justify-content: center;
             align-items: center;
             flex-direction: column;
+
+            @media @tablet {
+                width: 95%;
+            }//closes the media query
 
         }//closes midTop
 
@@ -104,39 +124,130 @@
             display: flex;
             align-items: center;
             flex-direction: column;
-            
 
+            
             .centrBoxes {
-                width: 90%;
+                width: 100%;
                 display: flex;
-                
-                
+                align-items: center;
+                justify-content: space-between;
+
+                @media @desk {
+                    margin:5%;
+                }//closes the media query
+                @media @tablet {
+                    margin:2%;
+                    flex-direction: column-reverse;
+                    flex-wrap: wrap;
+                }//closes the media query
+
                 img {
-                    width: 60%;
+                    width: 65%;
                     margin: 1.5%;
+
+                    @media @tablet {
+                    width: 90%;
+                    margin: 2% 0;
+                    }//closes the media query
+
+                    @media @phone {
+                        margin:2% 0;
+                    }//closes the media query
                 }//closes img
                 
                 .inner {
+                    width: 25%;
                     margin:2%;
+
+                    @media @tablet {
+                        width:90%;
+                        margin:5% 0;
+                    }//closes the media query
                 }//closes the inner
+
+                .reverse {
+                    display: flex;
+                    @media @tablet {
+                        flex-direction: column;
+                        align-items: center;
+                    }//closes the media query
+                }//closes the reverse
 
             }//closes centrBoxes
 
         }//closes center
 
+        
     }//closes the midPage
     
    .bottomPage {
-       height: 100vh;
-   }
+    background-image: url(/images/mussels.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+       
+        .bottomTop {
+            .center();
+            height: 10vh;
+            background: black;
 
-   
-    
-    
+            h2 {
+                color: white;
+            }//closes h2
 
+        }//closes bottomTop
 
+        .bottomBox {
+            width:90%;
+            display: flex;
+            justify-content:center;
+            align-items: center;
+            justify-content: space-evenly;
+            flex-direction: column;
 
+            .bottomMid {
+                margin:20%;
+                padding:2%;
+                width:40%;
+                height:20vh;
+                border-radius: 10px;
+                background: @white;
+                
+                @media @tablet {
+                    width: 60%;
+                }//closes media query 
 
+                a {
+                    text-decoration: none;
+                }//closes the anchor
+                h3, p {
+                    color: @greenOlive;
+                }//closes the h3,p
+                
+                .mid {
+                    width:50%;
+                    
+                    h4, p {
+                    color: @white;
+                    }//closes the h4, p
+                }//closes the mid class
+            }//closes the bottomMid class
 
+            a {
+                button {
+                    // width: 30%;
+                    height: 5vh;
+                    background: @pimentoRed;
+                    color: @lightYellow;
+                    font-size: 3.5rem;
+                    border-radius: 10px;
 
-}
+                    &:hover {
+                        background: @lightYellow;
+                        color:@pimentoRed; 
+                    }//closes the hover
+                }//closes the button
+            }//closes the anchor
+        }//closes the bottomBox
+    }//closes the bottomPage
+}//closes the home
