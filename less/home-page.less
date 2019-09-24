@@ -12,21 +12,23 @@
     /*Sidebar button
 --------------------------------------------*/
     #sidebar{
-        background:#F5F5F5;
-        width:180px;
-        height:100%
+        background:@white;
+        width: 40%;
+        margin-top: 5%;
+        padding: 1%;
+        height:100%;
         display: block;
         position: absolute;
-        right: -180px;
+        right: -40%;
         top: 0px;
-        transition: left 0.3s linear;
-        font-family: Lato', sans-serif;
-        font-size: 25
+        transition: left 1.2s linear;
+        font-family: 'Lato', sans-serif;
+        font-size: 5rem;
     }
 
     #sidebar.visible{
         right:0;
-        transition: left 4.0s linear;
+        transition: right 1.1s linear;
     }
 
 
@@ -40,11 +42,12 @@
     }
 
     ul li a{
-        color:#F5F5F5;
+        color:@kalamata;
         display: block;
         width: 180px;
         padding: 10px;
         text-decoration: none;
+        font-size: 3rem;
     }
 
     #sidebar-btn{
@@ -61,10 +64,13 @@
 
     #sidebar-btn span{
         height:3px;
-        background: #2b0f16;
+        background: @kalamata;
         margin-bottom: 5px;
-        display: block
+        display: block;
         
+        @media @phone {
+            background: @white;
+        }
     }
         
     
