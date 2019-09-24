@@ -232,6 +232,9 @@ header .navBox nav a:hover {
   background-repeat: no-repeat;
   height: 100vh;
 }
+.home .topBox img {
+  width: 40%;
+}
 .home #sidebar {
   background: #F5F5F5;
   width: 40%;
@@ -286,4 +289,14 @@ header .navBox nav a:hover {
   .home #sidebar-btn span {
     background: #F5F5F5;
   }
+}
+.home .midBox {
+  background: #F3C65D;
+  height: 100vh;
+}
+.home .midBox .centr {
+  background: #F5F5F5;
+  color: #2b0f16;
+  width: 50%;
+  margin: 3%;
 }
