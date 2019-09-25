@@ -419,14 +419,19 @@ footer h4 {
 .home .bottomPage .bottomBox .bottomMid {
   margin: 10%;
   padding: 2%;
-  width: 40%;
+  width: 70%;
   border-radius: 10px;
   background: #F5F5F5;
   border: 2px solid #c0200f;
 }
 @media (max-width:800px) {
   .home .bottomPage .bottomBox .bottomMid {
-    width: 60%;
+    width: 65%;
+  }
+}
+@media (max-width:500px) {
+  .home .bottomPage .bottomBox .bottomMid {
+    width: 55%;
   }
 }
 .home .bottomPage .bottomBox .bottomMid a {
