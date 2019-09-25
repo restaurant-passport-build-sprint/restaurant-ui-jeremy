@@ -189,7 +189,7 @@ header .navBox {
 @media (max-width:500px) {
   header .navBox {
     width: 100%;
-    height: 10vh;
+    height: 14vh;
     display: flex;
     justify-content: flex-start;
   }
@@ -230,13 +230,13 @@ header .navBox nav a:hover {
   }
 }
 footer {
-  height: 3.5vh;
-  padding: 1%;
+  width: 100%;
   display: flex;
   justify-content: center;
   background: #ffe3ab;
 }
 footer h4 {
+  padding: 1.5%;
   color: #c0200f;
 }
 .home {
@@ -245,14 +245,19 @@ footer h4 {
 --------------------------------------------*/
 }
 .home .topBox {
-  background-image: url(/images/dinnerTableW.png);
+  background-image: url("../images/dinnerTableW.png");
   background-size: cover;
   background-repeat: no-repeat;
   height: 100vh;
 }
 .home .topBox img {
-  width: 50%;
+  width: 40%;
   margin: 5% 0 0 12%;
+}
+@media (max-width:500px) {
+  .home .topBox img {
+    width: 50%;
+  }
 }
 .home #sidebar {
   background: #F5F5F5;
@@ -296,25 +301,9 @@ footer h4 {
 }
 .home .midPage {
   background: #ffe3ab;
-  height: 230vh;
   display: flex;
   align-items: center;
   flex-direction: column;
-}
-@media (max-width:1000px) {
-  .home .midPage {
-    height: 220vh;
-  }
-}
-@media (max-width:800px) {
-  .home .midPage {
-    height: 270vh;
-  }
-}
-@media (max-width:500px) {
-  .home .midPage {
-    height: 200vh;
-  }
 }
 .home .midPage .midTop {
   background: #F5F5F5;
@@ -345,11 +334,6 @@ footer h4 {
   align-items: center;
   justify-content: space-between;
 }
-@media (max-width:1000px) {
-  .home .midPage .center .centrBoxes {
-    margin: 5%;
-  }
-}
 @media (max-width:800px) {
   .home .midPage .center .centrBoxes {
     margin: 2%;
@@ -359,7 +343,8 @@ footer h4 {
 }
 .home .midPage .center .centrBoxes img {
   width: 65%;
-  margin: 1.5%;
+  margin: 5%;
+  border: 4px solid #F5F5F5;
 }
 @media (max-width:800px) {
   .home .midPage .center .centrBoxes img {
@@ -379,20 +364,19 @@ footer h4 {
 @media (max-width:800px) {
   .home .midPage .center .centrBoxes .inner {
     width: 90%;
-    margin: 5% 0;
   }
 }
 .home .midPage .center .centrBoxes .reverse {
   display: flex;
+  align-items: center;
 }
 @media (max-width:800px) {
   .home .midPage .center .centrBoxes .reverse {
     flex-direction: column;
-    align-items: center;
   }
 }
 .home .bottomPage {
-  background-image: url(/images/mussels.jpg);
+  background-image: url("../images/mussels.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   height: 100vh;
@@ -401,10 +385,11 @@ footer h4 {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 10vh;
+  width: 100%;
   background: black;
 }
 .home .bottomPage .bottomTop h2 {
+  padding: 2%;
   color: white;
 }
 .home .bottomPage .bottomBox {
@@ -416,12 +401,12 @@ footer h4 {
   flex-direction: column;
 }
 .home .bottomPage .bottomBox .bottomMid {
-  margin: 20%;
+  margin: 10%;
   padding: 2%;
   width: 40%;
-  height: 20vh;
   border-radius: 10px;
   background: #F5F5F5;
+  border: 2px solid #c0200f;
 }
 @media (max-width:800px) {
   .home .bottomPage .bottomBox .bottomMid {
@@ -443,7 +428,6 @@ footer h4 {
   color: #F5F5F5;
 }
 .home .bottomPage .bottomBox a button {
-  height: 5vh;
   background: #c0200f;
   color: #ffe3ab;
   font-size: 3.5rem;
@@ -457,15 +441,29 @@ footer h4 {
   height: 100vh;
 }
 #about .topper {
-  background-image: url(/images/wine.jpg);
-  background-size: cover;
+  background-image: url("../images/wine.jpg");
+  background-size: 100%;
   background-repeat: no-repeat;
-  height: 100vh;
+  padding: 15%;
   display: flex;
+}
+@media (max-width:1000px) {
+  #about .topper {
+    padding: 15%;
+  }
+}
+@media (max-width:800px) {
+  #about .topper {
+    padding: 8%;
+  }
+}
+@media (max-width:500px) {
+  #about .topper {
+    padding: 6%;
+  }
 }
 #about .topper .info {
   width: 25%;
-  height: 18vh;
   background: #F5F5F5;
   border-radius: 10px;
   margin: 10% 6%;
@@ -474,19 +472,12 @@ footer h4 {
 #about .topper .info a {
   text-decoration: none;
 }
-@media (max-width:800px) {
-  #about .topper .info {
-    height: 25vh;
-  }
-}
 @media (max-width:500px) {
   #about .topper .info {
     width: 40%;
-    height: 25vh;
   }
 }
 #about #middle {
-  height: 150vh;
   background: #ffe3ab;
   display: flex;
   flex-direction: column;
@@ -494,21 +485,26 @@ footer h4 {
   justify-content: space-evenly;
   align-items: center;
 }
-@media (max-width:500px) {
-  #about #middle {
-    height: 200vh;
-  }
-}
 #about #middle .deck {
-  width: 96%;
+  width: 75%;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
 }
+@media (max-width:1000px) {
+  #about #middle .deck {
+    width: 100%;
+  }
+}
+@media (max-width:800px) {
+  #about #middle .deck {
+    width: 90%;
+  }
+}
 #about #middle .deck .card {
-  height: 40vh;
-  width: 30%;
-  margin: 2% 0;
+  width: 20%;
+  margin: 3%;
+  padding: 1% 0;
   border-radius: 15px;
   background: #2b0f16;
   border: 2px solid #F5F5F5;
@@ -517,14 +513,19 @@ footer h4 {
   align-items: center;
   justify-content: space-evenly;
 }
+@media (max-width:1000px) {
+  #about #middle .deck .card {
+    width: 25%;
+  }
+}
 @media (max-width:800px) {
   #about #middle .deck .card {
-    height: 43vh;
+    width: 40%;
   }
 }
 @media (max-width:500px) {
   #about #middle .deck .card {
-    width: 35%;
+    width: 40%;
   }
 }
 #about #middle .deck .card h3 {
@@ -545,5 +546,6 @@ footer h4 {
 }
 #about #middle .deck .card .fab {
   font-size: 4rem;
+  margin: 4%;
   color: #F5F5F5;
 }

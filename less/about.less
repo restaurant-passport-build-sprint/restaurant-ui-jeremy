@@ -6,16 +6,24 @@
         
     }
     .topper {
-        background-image: url(/images/wine.jpg);
-       background-size: cover;
+        background-image: url("../images/wine.jpg");
+       background-size: 100%;
        background-repeat: no-repeat;
-       height: 100vh;
+       padding:15%;
        display: flex;
        
+       @media @desk {
+            padding:15%;
+       }
+       @media @tablet {
+            padding:8%;
+        }
+        @media @phone {
+            padding:6%;
+        }
 
         .info {
             width: 25%;
-            height: 18vh;
             background: @white;
             border-radius: 10px;
             margin: 10% 6%;
@@ -23,26 +31,18 @@
 
             a{
                 text-decoration: none;
-            }//closese the anchor
-
-            @media @tablet {
-                height: 25vh;
-            }//closes the media query
+            }//closes the anchor
 
             @media @phone {
                 width: 40%;
-                height: 25vh;
             }//closes the media query
-
 
         }//closes the info  
        
-        
-
     }//closes the topper
     
     #middle {
-        height:150vh;
+        // height:160vh;
         background: @lightYellow;
         display: flex;
         flex-direction:column;
@@ -50,20 +50,23 @@
         justify-content: space-evenly;
         align-items: center;
 
-        @media @phone {
-            height: 200vh;
-        }
-
         .deck{
-            width: 96%;
+            width: 75%;
             display: flex;
             flex-wrap: wrap;
             justify-content: space-evenly;
 
+            @media @desk {
+                width: 100%;
+            }
+
+            @media @tablet {
+                width: 90%;
+            }
             .card {
-                height: 40vh;
-                width:30%;
-                margin: 2% 0;
+                width:20%;
+                margin: 3%;
+                padding: 1% 0;
                 border-radius: 15px;
                 background: @kalamata;
                 border: 2px solid @white;
@@ -72,11 +75,16 @@
                 align-items: center;
                 justify-content: space-evenly;
 
-                @media @tablet {
-                    height: 43vh;
+                @media @desk {
+                    width: 25%;
                 }
+
+                @media @tablet {
+                    width: 40%;
+                }
+
                 @media @phone {
-                    width: 35%;
+                    width: 40%;
                 }
 
                 h3 {
@@ -84,19 +92,23 @@
                     color: @white;
                     text-align: center;
                 }//closes the h3
+
                 img {
                     width: 70%;
                     border-radius: 35%;
                     border: 2px solid @lightYellow;
                     margin:5% 0;
                 }//closes the img
+
                 h5 {
                     width: 60%;
                     color: @white;
                     text-align: center;
                 }//closes the h5
+                
                 .fab {
                     font-size: 4rem;
+                    margin:4%;
                     color:@white;
                 }//closes the icon
 
