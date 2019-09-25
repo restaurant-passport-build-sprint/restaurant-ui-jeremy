@@ -265,7 +265,7 @@ footer h4 {
   width: 40%;
   margin-top: 5%;
   padding: 1%;
-  height: 70%;
+  height: 45%;
   display: block;
   position: absolute;
   right: -40%;
@@ -274,6 +274,16 @@ footer h4 {
   font-family: 'Lato', sans-serif;
   font-size: 5rem;
   line-height: 1.4;
+}
+@media (max-width:1000px) {
+  .home #sidebar {
+    height: 55%;
+  }
+}
+@media (max-width:800px) {
+  .home #sidebar {
+    height: 70%;
+  }
 }
 @media (max-width:500px) {
   .home #sidebar {
