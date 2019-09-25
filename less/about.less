@@ -1,0 +1,111 @@
+#about {
+    height: 100vh;
+    
+    a {
+
+        
+    }
+    .topper {
+        background-image: url(/images/wine.jpg);
+       background-size: cover;
+       background-repeat: no-repeat;
+       height: 100vh;
+       display: flex;
+       
+
+        .info {
+            width: 25%;
+            height: 18vh;
+            background: @white;
+            border-radius: 10px;
+            margin: 10% 6%;
+            padding: 2%;
+
+            a{
+                text-decoration: none;
+            }//closese the anchor
+
+            @media @tablet {
+                height: 25vh;
+            }//closes the media query
+
+            @media @phone {
+                width: 40%;
+                height: 25vh;
+            }//closes the media query
+
+
+        }//closes the info  
+       
+        
+
+    }//closes the topper
+    
+    #middle {
+        height:150vh;
+        background: @lightYellow;
+        display: flex;
+        flex-direction:column;
+        justify-content: center;
+        justify-content: space-evenly;
+        align-items: center;
+
+        @media @phone {
+            height: 200vh;
+        }
+
+        .deck{
+            width: 96%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+
+            .card {
+                height: 40vh;
+                width:30%;
+                margin: 2% 0;
+                border-radius: 15px;
+                background: @kalamata;
+                border: 2px solid @white;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: space-evenly;
+
+                @media @tablet {
+                    height: 43vh;
+                }
+                @media @phone {
+                    width: 35%;
+                }
+
+                h3 {
+                    width: 60%;
+                    color: @white;
+                    text-align: center;
+                }//closes the h3
+                img {
+                    width: 70%;
+                    border-radius: 35%;
+                    border: 2px solid @lightYellow;
+                    margin:5% 0;
+                }//closes the img
+                h5 {
+                    width: 60%;
+                    color: @white;
+                    text-align: center;
+                }//closes the h5
+                .fab {
+                    font-size: 4rem;
+                    color:@white;
+                }//closes the icon
+
+            }//closes the card
+            
+        }//closes the deck
+
+    }//closes the middle
+    
+}//closes the About
+
+
