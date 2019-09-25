@@ -162,7 +162,7 @@ h5 {
 }
 p {
   font-size: 1.6rem;
-  line-height: 1.4;
+  line-height: 2;
 }
 .container {
   max-width: 100%;
@@ -261,17 +261,32 @@ footer h4 {
 }
 .home #sidebar {
   background: #F5F5F5;
-  width: 40%;
+  width: 30%;
   margin-top: 5%;
   padding: 1%;
-  height: 80%;
+  height: 60%;
   display: block;
   position: absolute;
-  right: -40%;
+  right: -30%;
   top: 0px;
   transition: left 1.2s linear;
   font-family: 'Lato', sans-serif;
   font-size: 5rem;
+  line-height: 1.4;
+}
+.home a {
+  text-align: center;
+}
+.home a button {
+  background: #2b0f16;
+  color: #ffe3ab;
+  font-size: 2.5rem;
+  font-family: 'Libre Baskerville', serif;
+  border-radius: 10px;
+}
+.home a button:hover {
+  background: #ffe3ab;
+  color: #2b0f16;
 }
 .home #sidebar.visible {
   right: 0;
@@ -344,6 +359,7 @@ footer h4 {
 .home .midPage .center .centrBoxes img {
   width: 65%;
   margin: 5%;
+  box-shadow: 10px 10px 5px grey;
   border: 4px solid #F5F5F5;
 }
 @media (max-width:800px) {
@@ -441,33 +457,20 @@ footer h4 {
   height: 100vh;
 }
 #about .topper {
-  background-image: url("../images/wine.jpg");
-  background-size: 100%;
+  background-image: url("../images/skillet.jpg");
+  background-size: cover;
   background-repeat: no-repeat;
-  padding: 15%;
-  display: flex;
-}
-@media (max-width:1000px) {
-  #about .topper {
-    padding: 15%;
-  }
-}
-@media (max-width:800px) {
-  #about .topper {
-    padding: 8%;
-  }
-}
-@media (max-width:500px) {
-  #about .topper {
-    padding: 6%;
-  }
+  padding: 0.5%;
 }
 #about .topper .info {
-  width: 25%;
+  width: 80%;
   background: #F5F5F5;
   border-radius: 10px;
-  margin: 10% 6%;
+  border: 2px solid #c0200f;
+  margin: 8% 6%;
   padding: 2%;
+  display: flex;
+  justify-content: center;
 }
 #about .topper .info a {
   text-decoration: none;
@@ -475,6 +478,19 @@ footer h4 {
 @media (max-width:500px) {
   #about .topper .info {
     width: 40%;
+  }
+}
+#about .topper .logo {
+  display: flex;
+  justify-content: flex-end;
+  margin: 3%;
+}
+#about .topper .logo img {
+  width: 40%;
+}
+@media (max-width:500px) {
+  #about .topper .logo img {
+    width: 60%;
   }
 }
 #about #middle {

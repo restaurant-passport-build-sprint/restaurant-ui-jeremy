@@ -2,28 +2,33 @@
     height: 100vh;
     
     .topper {
-        background-image: url("../images/wine.jpg");
-       background-size: 100%;
+        background-image: url("../images/skillet.jpg");
+       background-size: cover;
        background-repeat: no-repeat;
-       padding:15%;
-       display: flex;
+       padding: .5%;
+    //    display: flex;
+    //    justify-content: space-between;
+    //    flex-direction: column;
        
-       @media @desk {
-            padding:15%;
-       }//closes the media query
-       @media @tablet {
-            padding:8%;
-        }//closes the media query
-        @media @phone {
-            padding:6%;
-        }//closes the media query
+    //    @media @desk {
+    //         padding:12% 0;
+    //    }//closes the media query
+    //    @media @tablet {
+    //         padding:8%;
+    //     }//closes the media query
+    //     @media @phone {
+    //         padding:6%;
+    //     }//closes the media query
 
         .info {
-            width: 25%;
+            width: 80%;
             background: @white;
             border-radius: 10px;
-            margin: 10% 6%;
+            border: 2px solid @pimentoRed;
+            margin: 8% 6%;
             padding: 2%;
+            display: flex;
+            justify-content: center;
 
             a{
                 text-decoration: none;
@@ -34,7 +39,21 @@
             }//closes the media query
 
         }//closes the info  
-       
+
+       .logo {
+           display: flex;
+           justify-content: flex-end;
+           margin: 3%;
+
+           img {
+               width:40%;
+
+               @media @phone {
+                   width:60%;
+               }
+           }
+            
+        }
     }//closes the topper
     
     #middle {
@@ -59,7 +78,7 @@
             @media @tablet {
                 width: 90%;
             }//closes the media query
-            
+
             .card {
                 width:20%;
                 margin: 3%;
