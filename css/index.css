@@ -162,7 +162,7 @@ h5 {
 }
 p {
   font-size: 1.6rem;
-  line-height: 1.4;
+  line-height: 2;
 }
 .container {
   max-width: 100%;
@@ -261,17 +261,18 @@ footer h4 {
 }
 .home #sidebar {
   background: #F5F5F5;
-  width: 40%;
+  width: 30%;
   margin-top: 5%;
   padding: 1%;
-  height: 80%;
+  height: 60%;
   display: block;
   position: absolute;
-  right: -40%;
+  right: -30%;
   top: 0px;
   transition: left 1.2s linear;
   font-family: 'Lato', sans-serif;
   font-size: 5rem;
+  line-height: 1.4;
 }
 .home #sidebar.visible {
   right: 0;
