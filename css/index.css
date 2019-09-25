@@ -522,6 +522,11 @@ footer h4 {
     width: 90%;
   }
 }
+@media (max-width:500px) {
+  #about #middle .deck {
+    width: 100%;
+  }
+}
 #about #middle .deck .card {
   width: 20%;
   margin: 3%;
@@ -546,7 +551,7 @@ footer h4 {
 }
 @media (max-width:500px) {
   #about #middle .deck .card {
-    width: 40%;
+    width: 42%;
   }
 }
 #about #middle .deck .card h3 {
