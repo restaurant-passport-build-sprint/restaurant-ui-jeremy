@@ -35,6 +35,26 @@
         line-height: 1.4;
     }
 
+    a {
+        text-align: center;
+
+        button {
+            background: @kalamata;
+            color: @lightYellow;
+            font-size: 2.5rem;
+            font-family: 'Libre Baskerville', serif;
+            border-radius: 10px;
+            
+
+            &:hover {
+                background: @lightYellow;
+                color:@kalamata; 
+            }//closes the hover
+
+        }//closes the button
+
+    }//closes the anchor
+
     #sidebar.visible{
         right:0;
         transition: right 1.1s linear;
@@ -114,6 +134,7 @@
                 img {
                     width: 65%;
                     margin: 5%;
+                    box-shadow: 10px 10px 5px grey;
                     border: 4px solid @white;
 
                     @media @tablet {
